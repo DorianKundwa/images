@@ -1,0 +1,902 @@
+[
+  {
+    "index": 1,
+    "timestamp": "[0:00]",
+    "timestamp_clean": "0-00",
+    "download_time": "2026-10-08 08:46:07",
+    "original_filename": "b2028825-019e-4b21-be8c-0cd234771337.jpg",
+    "new_filename": "[0-00] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a snarling, exaggerated muscle-bound stick figure.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a snarling, exaggerated muscle-bound stick figure holding a sword, a thick red diagonal X drawn across the whole scene, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 2,
+    "timestamp": "[0:10]",
+    "timestamp_clean": "0-10",
+    "download_time": "2026-10-08 08:47:09",
+    "original_filename": "a6168e2d-1bbf-434b-9b01-0abc4839ab5b.jpg",
+    "new_filename": "[0-10] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a simple film clapperboard icon labeled HOLLYWOOD in.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a simple film clapperboard icon labeled HOLLYWOOD in bold ALL CAPS marker text, white background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 3,
+    "timestamp": "[0:12]",
+    "timestamp_clean": "0-12",
+    "download_time": "2026-10-08 08:48:19",
+    "original_filename": "2e130298-6c17-4b34-99bb-6eb9866337db.jpg",
+    "new_filename": "[0-12] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, an old stone tombstone icon and an unrolled scroll.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, an old stone tombstone icon and an unrolled scroll beside bold text reading THE REAL RECORD, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 4,
+    "timestamp": "[0:18]",
+    "timestamp_clean": "0-18",
+    "download_time": "2026-10-08 08:49:19",
+    "original_filename": "b7c68d83-e42e-417a-ad4c-f1df8fe67e5b.jpg",
+    "new_filename": "[0-18] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a stick figure gladiator standing beside a large.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a stick figure gladiator standing beside a large money bag icon, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 5,
+    "timestamp": "[0:25]",
+    "timestamp_clean": "0-25",
+    "download_time": "2026-10-08 08:50:19",
+    "original_filename": "a9ae2cdd-397e-4b35-9231-056fb31eb9fc.jpg",
+    "new_filename": "[0-25] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, the same gladiator stick figure standing inside a.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, the same gladiator stick figure standing inside a protective glowing circle outline, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 6,
+    "timestamp": "[0:34]",
+    "timestamp_clean": "0-34",
+    "download_time": "2026-10-08 08:51:20",
+    "original_filename": "016ec178-1ac0-48b5-bca3-d203f818c985.jpg",
+    "new_filename": "[0-34] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, large bold ALL CAPS red marker text centered reading.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, large bold ALL CAPS red marker text centered reading 7 STAGES, white background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 7,
+    "timestamp": "[0:38]",
+    "timestamp_clean": "0-38",
+    "download_time": "2026-10-08 08:52:19",
+    "original_filename": "4d2752bc-045d-49aa-a890-e6e52862bcf9.jpg",
+    "new_filename": "[0-38] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a simple bone icon, a tombstone icon, and an unrolled.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a simple bone icon, a tombstone icon, and an unrolled scroll arranged together in a row, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 8,
+    "timestamp": "[0:49]",
+    "timestamp_clean": "0-49",
+    "download_time": "2026-10-08 08:53:20",
+    "original_filename": "b248db28-0e34-4c0a-a5b6-06e470e9a009.jpg",
+    "new_filename": "[0-49] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a large yellow question mark over an ordinary stick.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a large yellow question mark over an ordinary stick figure wearing simple chain shackles on its wrists, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 9,
+    "timestamp": "[1:00]",
+    "timestamp_clean": "1-00",
+    "download_time": "2026-10-08 08:54:19",
+    "original_filename": "74c391be-3b27-4f4b-9b58-69864bfe4a77.jpg",
+    "new_filename": "[1-00] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, large bold ALL CAPS red marker text centered reading.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, large bold ALL CAPS red marker text centered reading STAGE ONE, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 10,
+    "timestamp": "[1:04]",
+    "timestamp_clean": "1-04",
+    "download_time": "2026-10-08 08:55:19",
+    "original_filename": "4c2dc14c-d4ea-401f-99ee-d2b5639b691c.jpg",
+    "new_filename": "[1-04] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, three small stick figures standing in a row labeled.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, three small stick figures standing in a row labeled PRISONER, CRIMINAL, and ENSLAVED in bold ALL CAPS marker text, chains on their wrists, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 11,
+    "timestamp": "[1:13]",
+    "timestamp_clean": "1-13",
+    "download_time": "2026-10-08 08:56:19",
+    "original_filename": "cc6deba7-89ed-4d11-8da9-8b47534ddb3e.jpg",
+    "new_filename": "[1-13] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a stick figure wearing a simple toga signing a.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a stick figure wearing a simple toga signing a document at a table, a small coin bag and laurel icon beside it, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 12,
+    "timestamp": "[1:27]",
+    "timestamp_clean": "1-27",
+    "download_time": "2026-10-08 08:57:19",
+    "original_filename": "3171bd2d-be82-4276-b295-02b604b66228.jpg",
+    "new_filename": "[1-27] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a stick figure walking forward along a path toward a.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a stick figure walking forward along a path toward a distant gate, no weapon in hand yet, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 13,
+    "timestamp": "[1:35]",
+    "timestamp_clean": "1-35",
+    "download_time": "2026-10-08 08:58:19",
+    "original_filename": "86a7be34-cc14-462f-a753-3d2b3cca6dc1.jpg",
+    "new_filename": "[1-35] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, large bold ALL CAPS red marker text centered reading.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, large bold ALL CAPS red marker text centered reading STAGE TWO, white background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 14,
+    "timestamp": "[1:37]",
+    "timestamp_clean": "1-37",
+    "download_time": "2026-10-08 08:59:20",
+    "original_filename": "17d964a0-7429-4f13-b0b8-f114d871dc38.jpg",
+    "new_filename": "[1-37] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a stick figure standing before a stone gateway.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a stick figure standing before a stone gateway labeled LUDUS, reciting from an unrolled scroll, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 15,
+    "timestamp": "[1:44]",
+    "timestamp_clean": "1-44",
+    "download_time": "2026-10-08 09:00:20",
+    "original_filename": "bdd6a33d-e0d4-43b1-a10f-478c7e6f1948.jpg",
+    "new_filename": "[1-44] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, four small icons in a row a flame, a rope, a raised.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, four small icons in a row: a flame, a rope, a raised fist, and a sword, each labeled with a single bold word beneath, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 16,
+    "timestamp": "[1:55]",
+    "timestamp_clean": "1-55",
+    "download_time": "2026-10-08 09:01:19",
+    "original_filename": "70cb4250-ec04-4b3c-88e5-ebdd91a096d8.jpg",
+    "new_filename": "[1-55] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, bold ALL CAPS black marker text reading METAPHOR with.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, bold ALL CAPS black marker text reading METAPHOR with a thick red diagonal X drawn across it, white background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 17,
+    "timestamp": "[1:57]",
+    "timestamp_clean": "1-57",
+    "download_time": "2026-10-08 09:02:19",
+    "original_filename": "11f9d6a8-c528-4ddd-8633-4dc3a6d86cd9.jpg",
+    "new_filename": "[1-57] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a simple balance scale icon of justice shown broken.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a simple balance scale icon of justice shown broken and tilted, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 18,
+    "timestamp": "[2:06]",
+    "timestamp_clean": "2-06",
+    "download_time": "2026-10-08 09:03:19",
+    "original_filename": "82ce3b40-c43a-4e8f-a1e3-f3da482daf16.jpg",
+    "new_filename": "[2-06] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a ludus owner stick figure holding a leash connected.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a ludus owner stick figure holding a leash connected to a gladiator stick figure, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 19,
+    "timestamp": "[2:14]",
+    "timestamp_clean": "2-14",
+    "download_time": "2026-10-08 09:04:19",
+    "original_filename": "64e9fa3f-1466-4103-bf4c-42400795c033.jpg",
+    "new_filename": "[2-14] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a toga-wearing stick figure signing a document at a.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a toga-wearing stick figure signing a document at a table with a worried expression, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 20,
+    "timestamp": "[2:20]",
+    "timestamp_clean": "2-20",
+    "download_time": "2026-10-08 09:05:20",
+    "original_filename": "1bec2c74-14b0-41b7-8d55-8867ec2100ec.jpg",
+    "new_filename": "[2-20] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, the same stick figure shown half in a toga and half.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, the same stick figure shown half in a toga and half in gladiator armor, a visual swap down the middle of the body, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 21,
+    "timestamp": "[2:25]",
+    "timestamp_clean": "2-25",
+    "download_time": "2026-10-08 09:06:19",
+    "original_filename": "0e8f1be1-70df-4f47-b291-866137adba5a.jpg",
+    "new_filename": "[2-25] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a small gold coin and a laurel wreath icon held just.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a small gold coin and a laurel wreath icon held just out of reach of an outstretched stick-figure hand, white background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 22,
+    "timestamp": "[2:30]",
+    "timestamp_clean": "2-30",
+    "download_time": "2026-10-08 09:07:19",
+    "original_filename": "3be8828a-07fb-4f8c-a56a-8a4eaf01d006.jpg",
+    "new_filename": "[2-30] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a stick figure wearing a toga writing on a scroll.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a stick figure wearing a toga writing on a scroll labeled RESTRICT in bold ALL CAPS marker text, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 23,
+    "timestamp": "[2:43]",
+    "timestamp_clean": "2-43",
+    "download_time": "2026-10-08 09:08:17",
+    "original_filename": "cbe03941-aace-4446-9ee7-6c4b0aa3f334.jpg",
+    "new_filename": "[2-43] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a stick figure standing at a fork, one path weighed.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a stick figure standing at a fork, one path weighed down by a heavy chain-and-coin icon labeled DEBT, the other leading to an open gate, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 24,
+    "timestamp": "[2:51]",
+    "timestamp_clean": "2-51",
+    "download_time": "2026-10-08 09:09:20",
+    "original_filename": "1a39bca8-c145-4b62-a419-d1a3227a978c.jpg",
+    "new_filename": "[2-51] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, large bold ALL CAPS red marker text centered reading.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, large bold ALL CAPS red marker text centered reading STAGE THREE, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 25,
+    "timestamp": "[2:55]",
+    "timestamp_clean": "2-55",
+    "download_time": "2026-10-08 09:10:19",
+    "original_filename": "05ae6d03-fe33-4f0e-b920-08f226d9fc2b.jpg",
+    "new_filename": "[2-55] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a simple training-academy building icon with an open.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a simple training-academy building icon with an open courtyard, clearly distinct from a barred prison icon crossed out beside it, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 26,
+    "timestamp": "[3:06]",
+    "timestamp_clean": "3-06",
+    "download_time": "2026-10-08 09:11:19",
+    "original_filename": "1caf8c34-8721-49a4-8893-429298e8cc5c.jpg",
+    "new_filename": "[3-06] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, several stick figures in a training yard swinging.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, several stick figures in a training yard swinging oversized wooden practice weapons, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 27,
+    "timestamp": "[3:17]",
+    "timestamp_clean": "3-17",
+    "download_time": "2026-10-08 09:12:19",
+    "original_filename": "ba609afd-7516-4473-90a2-3063318ab3e5.jpg",
+    "new_filename": "[3-17] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a simple wooden bowl filled with barley and bean.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a simple wooden bowl filled with barley and bean shapes, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 28,
+    "timestamp": "[3:36]",
+    "timestamp_clean": "3-36",
+    "download_time": "2026-10-08 09:19:19",
+    "original_filename": "0f312659-4b33-4832-818d-e1a0c6bd5e57.jpg",
+    "new_filename": "[3-36] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, bold ALL CAPS golden yellow marker text centered.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, bold ALL CAPS golden yellow marker text centered reading BARLEY EATERS, a simple grain-stalk icon beside it, white background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 29,
+    "timestamp": "[3:42]",
+    "timestamp_clean": "3-42",
+    "download_time": "2026-10-08 09:20:19",
+    "original_filename": "f167043d-118c-464e-b319-8e157e031fb3.jpg",
+    "new_filename": "[3-42] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a plate piled with barley and beans beside a.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a plate piled with barley and beans beside a crossed-out meat icon, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 30,
+    "timestamp": "[3:48]",
+    "timestamp_clean": "3-48",
+    "download_time": "2026-10-08 09:21:19",
+    "original_filename": "afe18d0e-d30f-4aff-a6e8-5466e71afbab.jpg",
+    "new_filename": "[3-48] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a stick figure with a slightly rounder, padded.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a stick figure with a slightly rounder, padded silhouette, a yellow arrow pointing to the padding labeled PROTECTIVE LAYER, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 31,
+    "timestamp": "[4:02]",
+    "timestamp_clean": "4-02",
+    "download_time": "2026-10-08 09:22:20",
+    "original_filename": "95f31773-8edb-4ac2-9967-0e4540c0d811.jpg",
+    "new_filename": "[4-02] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a stick figure drinking from a simple cup with small.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a stick figure drinking from a simple cup with small glowing mineral sparkle marks rising from it, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 32,
+    "timestamp": "[4:14]",
+    "timestamp_clean": "4-14",
+    "download_time": "2026-10-08 09:23:19",
+    "original_filename": "7c1e19de-dd9d-4509-9157-c44fc3c26c19.jpg",
+    "new_filename": "[4-14] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, large bold ALL CAPS red marker text centered reading.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, large bold ALL CAPS red marker text centered reading STAGE FOUR, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 33,
+    "timestamp": "[4:16]",
+    "timestamp_clean": "4-16",
+    "download_time": "2026-10-08 09:24:25",
+    "original_filename": "eead2181-341e-4703-9307-f2dad984c225.jpg",
+    "new_filename": "[4-16] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, four differently equipped gladiator stick figures.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, four differently equipped gladiator stick figures standing in a row, each with distinct weapons and armor, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 34,
+    "timestamp": "[4:19]",
+    "timestamp_clean": "4-19",
+    "download_time": "2026-10-08 09:25:20",
+    "original_filename": "76d110d8-a0e5-4513-a3ad-cb30a6f9dcd0.jpg",
+    "new_filename": "[4-19] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, four small icons arranged in a row a net, a trident.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, four small icons arranged in a row: a net, a trident, a round shield, and a short sword, each labeled beneath in bold text, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 35,
+    "timestamp": "[4:24]",
+    "timestamp_clean": "4-24",
+    "download_time": "2026-10-08 09:26:23",
+    "original_filename": "9a63ec5a-5776-4696-baec-265bbd035ee3.jpg",
+    "new_filename": "[4-24] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a lightly armored stick figure holding a weighted net.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a lightly armored stick figure holding a weighted net and a trident, labeled RETIARIUS in bold ALL CAPS marker text, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 36,
+    "timestamp": "[4:32]",
+    "timestamp_clean": "4-32",
+    "download_time": "2026-10-08 09:28:24",
+    "original_filename": "f063eaac-1c6d-462d-bd68-563392980819.jpg",
+    "new_filename": "[4-32] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a stick figure wearing a smooth rounded helmet with.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a stick figure wearing a smooth rounded helmet with tiny eye-slits, labeled SECUTOR in bold ALL CAPS marker text, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 37,
+    "timestamp": "[4:44]",
+    "timestamp_clean": "4-44",
+    "download_time": "2026-10-08 09:30:47",
+    "original_filename": "9de1cc5f-93c1-49a6-a266-0a19220e6c5d.jpg",
+    "new_filename": "[4-44] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a heavily armored stick figure with a large shield.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a heavily armored stick figure with a large shield labeled MURMILLO standing opposite a lighter armored stick figure with a curved blade labeled THRAEX, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 38,
+    "timestamp": "[4:55]",
+    "timestamp_clean": "4-55",
+    "download_time": "2026-10-08 09:33:03",
+    "original_filename": "f973edcc-470d-4ece-bf7c-564d3c5c7e31.jpg",
+    "new_filename": "[4-55] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, bold ALL CAPS black marker text reading RANDOM with a.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, bold ALL CAPS black marker text reading RANDOM with a thick red diagonal X drawn across it, white background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 39,
+    "timestamp": "[4:57]",
+    "timestamp_clean": "4-57",
+    "download_time": "2026-10-08 09:34:50",
+    "original_filename": "92565f3b-06f7-43d7-982b-38797ed14f85.jpg",
+    "new_filename": "[4-57] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a simple wooden schedule board showing two different.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a simple wooden schedule board showing two different gladiator-type icons deliberately paired together with a connecting line, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 40,
+    "timestamp": "[5:11]",
+    "timestamp_clean": "5-11",
+    "download_time": "2026-10-08 09:36:01",
+    "original_filename": "995d24b8-37f4-481e-85d5-0bdf5484d4c4.jpg",
+    "new_filename": "[5-11] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a trainer stick figure studying a small chart showing.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a trainer stick figure studying a small chart showing two opposing weapon icons, thoughtful expression, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 41,
+    "timestamp": "[5:18]",
+    "timestamp_clean": "5-18",
+    "download_time": "2026-10-08 09:37:28",
+    "original_filename": "f2c17179-9159-4311-a8c7-4d09813e08bd.jpg",
+    "new_filename": "[5-18] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, large bold ALL CAPS red marker text centered reading.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, large bold ALL CAPS red marker text centered reading STAGE FIVE, solid orange background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 42,
+    "timestamp": "[5:23]",
+    "timestamp_clean": "5-23",
+    "download_time": "2026-10-08 09:38:41",
+    "original_filename": "3724b670-491e-477a-95c0-0952c6d55759.jpg",
+    "new_filename": "[5-23] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a simple skull icon with bold text beside it reading.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a simple skull icon with bold text beside it reading EVERY MATCH?, a thick red diagonal X beginning to form over it, solid orange background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 43,
+    "timestamp": "[5:27]",
+    "timestamp_clean": "5-27",
+    "download_time": "2026-10-08 09:41:40",
+    "original_filename": "18a01a16-cd97-4395-9f0d-ab18b12d4b09.jpg",
+    "new_filename": "[5-27] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, the same skull icon now fully crossed out with a bold.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, the same skull icon now fully crossed out with a bold red diagonal X, solid orange background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 44,
+    "timestamp": "[5:30]",
+    "timestamp_clean": "5-30",
+    "download_time": "2026-10-08 09:42:38",
+    "original_filename": "c989c1a6-8f85-4915-aaa2-16ce6c698e84.jpg",
+    "new_filename": "[5-30] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a money bag and a small ticket stub icon beside a.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a money bag and a small ticket stub icon beside a gladiator stick figure, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 45,
+    "timestamp": "[5:36]",
+    "timestamp_clean": "5-36",
+    "download_time": "2026-10-08 09:43:49",
+    "original_filename": "b79efdef-340c-46d5-81a6-039e3293ca57.jpg",
+    "new_filename": "[5-36] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a simple balance scale with the ALIVE side weighed.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a simple balance scale with the ALIVE side weighed down heavier than the other side, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 46,
+    "timestamp": "[5:44]",
+    "timestamp_clean": "5-44",
+    "download_time": "2026-10-08 09:45:27",
+    "original_filename": "5bd96e5a-a9bd-44c1-a34d-5fd26a2a0512.jpg",
+    "new_filename": "[5-44] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, three small icons in a row a raised open hand, two.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, three small icons in a row: a raised open hand, two clasped hands in a draw, and a seated sponsor figure pointing, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 47,
+    "timestamp": "[5:49]",
+    "timestamp_clean": "5-49",
+    "download_time": "2026-10-08 09:46:29",
+    "original_filename": "498c30ac-d8d2-4134-ab4e-eb7f2b803e8c.jpg",
+    "new_filename": "[5-49] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a gladiator stick figure kneeling with one arm raised.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a gladiator stick figure kneeling with one arm raised in an appeal gesture toward a seated sponsor figure in the stands, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 48,
+    "timestamp": "[6:03]",
+    "timestamp_clean": "6-03",
+    "download_time": "2026-10-08 09:47:33",
+    "original_filename": "2f7768d7-ff8f-41fa-868b-f6412257a1db.jpg",
+    "new_filename": "[6-03] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a small skull icon labeled REAL RISK in bold ALL CAPS.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a small skull icon labeled REAL RISK in bold ALL CAPS marker text beside it, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 49,
+    "timestamp": "[6:10]",
+    "timestamp_clean": "6-10",
+    "download_time": "2026-10-08 09:54:43",
+    "original_filename": "d7eca670-326f-433a-b719-a65ecaff9a6f.jpg",
+    "new_filename": "[6-10] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a skeptical stick figure with a raised eyebrow, a.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a skeptical stick figure with a raised eyebrow, a thought bubble reading STABLE SYSTEM? in bold ALL CAPS marker text, white background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 50,
+    "timestamp": "[6:19]",
+    "timestamp_clean": "6-19",
+    "download_time": "2026-10-08 09:55:35",
+    "original_filename": "d4bf17cd-d6ef-4dcc-ae61-308108f891b2.jpg",
+    "new_filename": "[6-19] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, bold ALL CAPS red marker text reading IMPOSSIBLE TO.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, bold ALL CAPS red marker text reading IMPOSSIBLE TO BREAK with a thick black diagonal X drawn across it, white background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 51,
+    "timestamp": "[6:20]",
+    "timestamp_clean": "6-20",
+    "download_time": "2026-10-08 09:56:45",
+    "original_filename": "8399a8f7-5cdd-42f5-8a7f-e9a542a960a9.jpg",
+    "new_filename": "[6-20] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a calendar reading 73 BCE beside a small kitchen.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a calendar reading 73 BCE beside a small kitchen knife icon and a gate labeled CAPUA, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 52,
+    "timestamp": "[6:36]",
+    "timestamp_clean": "6-36",
+    "download_time": "2026-10-08 09:58:42",
+    "original_filename": "48ffba77-ec1d-4d39-9010-b99578bc8b90.jpg",
+    "new_filename": "[6-36] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, several stick figures grabbing simple kitchen tools.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, several stick figures grabbing simple kitchen tools and skewers off a table, breaking through a gate, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 53,
+    "timestamp": "[6:46]",
+    "timestamp_clean": "6-46",
+    "download_time": "2026-10-08 09:59:35",
+    "original_filename": "e12ed695-0521-4860-871d-277c78c489f1.jpg",
+    "new_filename": "[6-46] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a small cluster of stick figures growing into a much.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a small cluster of stick figures growing into a much larger crowd silhouette moving across a hillside, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 54,
+    "timestamp": "[6:51]",
+    "timestamp_clean": "6-51",
+    "download_time": "2026-10-08 10:01:45",
+    "original_filename": "0b029dea-2977-49db-a99b-70a06733c9c5.jpg",
+    "new_filename": "[6-51] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a row of small soldier stick figures with spears.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a row of small soldier stick figures with spears stepping backward away from a much larger approaching crowd silhouette, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 55,
+    "timestamp": "[7:07]",
+    "timestamp_clean": "7-07",
+    "download_time": "2026-10-08 10:03:33",
+    "original_filename": "b6c006b2-21bf-4c46-a5dd-9192ef23ca2a.jpg",
+    "new_filename": "[7-07] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, bold ALL CAPS black marker text centered reading 71.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, bold ALL CAPS black marker text centered reading 71 BCE, white background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 56,
+    "timestamp": "[7:12]",
+    "timestamp_clean": "7-12",
+    "download_time": "2026-10-08 10:05:37",
+    "original_filename": "aa6bc5a1-9653-4691-a76b-385d126fba27.jpg",
+    "new_filename": "[7-12] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a long road icon stretching into the distance lined.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a long road icon stretching into the distance lined with small solemn upright marker posts, solid dark grey background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 57,
+    "timestamp": "[7:19]",
+    "timestamp_clean": "7-19",
+    "download_time": "2026-10-08 10:06:45",
+    "original_filename": "9971c265-57ab-41a6-9191-7f2592850ee9.jpg",
+    "new_filename": "[7-19] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a simple flat senate building icon with columns, a.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a simple flat senate building icon with columns, a small worried expression drawn on its steps, dark grey background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 58,
+    "timestamp": "[7:25]",
+    "timestamp_clean": "7-25",
+    "download_time": "2026-10-08 10:07:35",
+    "original_filename": "f4af5858-0a3c-4daa-94c2-a72659798904.jpg",
+    "new_filename": "[7-25] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a simple chain icon breaking apart into pieces, bold.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a simple chain icon breaking apart into pieces, bold ALL CAPS text beside it reading PROPERTY, dark grey background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 59,
+    "timestamp": "[7:31]",
+    "timestamp_clean": "7-31",
+    "download_time": "2026-10-08 10:08:40",
+    "original_filename": "a419799d-460c-41b7-ae96-fbc3214fa2fd.jpg",
+    "new_filename": "[7-31] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, large bold ALL CAPS red marker text centered reading.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, large bold ALL CAPS red marker text centered reading STAGE SIX, white background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 60,
+    "timestamp": "[7:38]",
+    "timestamp_clean": "7-38",
+    "download_time": "2026-10-08 10:09:39",
+    "original_filename": "c87ae9b5-ed41-4650-bc31-a7b89f188299.jpg",
+    "new_filename": "[7-38] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a secutor stick figure portrait beside a carved stone.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a secutor stick figure portrait beside a carved stone tombstone icon, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 61,
+    "timestamp": "[7:49]",
+    "timestamp_clean": "7-49",
+    "download_time": "2026-10-08 10:10:36",
+    "original_filename": "ee98ccfd-fd21-4e9c-a593-6e4c54dc6227.jpg",
+    "new_filename": "[7-49] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, close-up on the tombstone carved with the bold.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, close-up on the tombstone carved with the bold numbers 34, 21, and 9 in a row, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 62,
+    "timestamp": "[7:54]",
+    "timestamp_clean": "7-54",
+    "download_time": "2026-10-08 10:11:56",
+    "original_filename": "fe29e617-0c3a-4aaf-9b31-3eb22c7397d9.jpg",
+    "new_filename": "[7-54] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, bold ALL CAPS golden yellow marker text centered.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, bold ALL CAPS golden yellow marker text centered reading MISSIO, a small open hand mercy gesture icon beside it, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 63,
+    "timestamp": "[8:03]",
+    "timestamp_clean": "8-03",
+    "download_time": "2026-10-08 10:13:31",
+    "original_filename": "267ee6a1-1465-4291-a58b-74ab3265dcf9.jpg",
+    "new_filename": "[8-03] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, bold ALL CAPS red marker text reading REFUSED FREEDOM.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, bold ALL CAPS red marker text reading REFUSED FREEDOM with a thick black diagonal X drawn across it, white background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 64,
+    "timestamp": "[8:12]",
+    "timestamp_clean": "8-12",
+    "download_time": "2026-10-08 10:15:37",
+    "original_filename": "da8a34fa-3a03-4334-8d0a-e1d1fc01e822.jpg",
+    "new_filename": "[8-12] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a magnifying glass held up to the tombstone.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a magnifying glass held up to the tombstone inscription, close inspection, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 65,
+    "timestamp": "[8:14]",
+    "timestamp_clean": "8-14",
+    "download_time": "2026-10-08 10:16:40",
+    "original_filename": "90052c92-9b9b-499c-9678-1f657ed03fa9.jpg",
+    "new_filename": "[8-14] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, the word MISSIO in bold golden yellow text on one.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, the word MISSIO in bold golden yellow text on one side and the word FREEDOM crossed out in red on the other side, white background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 66,
+    "timestamp": "[8:17]",
+    "timestamp_clean": "8-17",
+    "download_time": "2026-10-08 10:18:51",
+    "original_filename": "deac38a0-2cfa-4cc8-84a6-165025bee63f.jpg",
+    "new_filename": "[8-17] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, bold ALL CAPS marker text centered reading NO.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, bold ALL CAPS marker text centered reading NO EXAGGERATION NEEDED, white background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 67,
+    "timestamp": "[8:21]",
+    "timestamp_clean": "8-21",
+    "download_time": "2026-10-08 10:19:32",
+    "original_filename": "4bd82894-bfc4-4c76-baf3-8b5ffe13abe7.jpg",
+    "new_filename": "[8-21] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a calendar reading AGE 30 beside the tombstone icon.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a calendar reading AGE 30 beside the tombstone icon, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 68,
+    "timestamp": "[8:33]",
+    "timestamp_clean": "8-33",
+    "download_time": "2026-10-08 10:20:31",
+    "original_filename": "da390a27-0806-4018-8b31-ec3cd3e8c9ed.jpg",
+    "new_filename": "[8-33] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, one glowing golden stick figure standing out among a.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, one glowing golden stick figure standing out among a row of plain grey stick figures, white background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 69,
+    "timestamp": "[8:36]",
+    "timestamp_clean": "8-36",
+    "download_time": "2026-10-08 10:21:49",
+    "original_filename": "4907d78d-a3fe-41be-b343-cecae4badbed.jpg",
+    "new_filename": "[8-36] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a wide shot of a small cemetery with many simple.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a wide shot of a small cemetery with many simple grave markers arranged in rows, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 70,
+    "timestamp": "[8:42]",
+    "timestamp_clean": "8-42",
+    "download_time": "2026-10-08 10:23:36",
+    "original_filename": "163aaecc-bda8-49ed-97aa-e8fdb37dc46d.jpg",
+    "new_filename": "[8-42] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, bold text reading 67 REMAINS beside one grave marker.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, bold text reading 67 REMAINS beside one grave marker highlighted in gold labeled OLD AGE among many plain ones, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 71,
+    "timestamp": "[8:51]",
+    "timestamp_clean": "8-51",
+    "download_time": "2026-10-08 10:24:38",
+    "original_filename": "d7852a8e-7658-4515-9b69-a997ec99c5eb.jpg",
+    "new_filename": "[8-51] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a simple bone icon with a small healed crack line.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a simple bone icon with a small healed crack line drawn across it, white background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 72,
+    "timestamp": "[8:56]",
+    "timestamp_clean": "8-56",
+    "download_time": "2026-10-08 10:25:33",
+    "original_filename": "d24011ca-5470-4db4-9267-8436affa8318.jpg",
+    "new_filename": "[8-56] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, the same bone icon now with several layered crack.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, the same bone icon now with several layered crack lines drawn over each other, white background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 73,
+    "timestamp": "[9:00]",
+    "timestamp_clean": "9-00",
+    "download_time": "2026-10-08 10:26:44",
+    "original_filename": "7d9dce75-9b52-41bc-baf1-183d07f05e64.jpg",
+    "new_filename": "[9-00] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a simple skull icon with a small dent mark drawn on.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a simple skull icon with a small dent mark drawn on one side, white background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 74,
+    "timestamp": "[9:05]",
+    "timestamp_clean": "9-05",
+    "download_time": "2026-10-08 10:27:35",
+    "original_filename": "2986d5d2-1504-4a0f-a06a-fa2aa5a7b812.jpg",
+    "new_filename": "[9-05] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a simple brain icon with a small warning triangle.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a simple brain icon with a small warning triangle symbol beside it, white background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 75,
+    "timestamp": "[9:14]",
+    "timestamp_clean": "9-14",
+    "download_time": "2026-10-08 10:28:40",
+    "original_filename": "844e81fd-c30a-4b19-aef0-588d9ace1010.jpg",
+    "new_filename": "[9-14] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a row of small grave markers each with a tiny carved.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a row of small grave markers each with a tiny carved name visible on them, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 76,
+    "timestamp": "[9:18]",
+    "timestamp_clean": "9-18",
+    "download_time": "2026-10-08 10:30:51",
+    "original_filename": "08786242-c2d2-4ee8-ba89-822aa831aefc.jpg",
+    "new_filename": "[9-18] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, close-up on the Flamma tombstone icon again, full.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, close-up on the Flamma tombstone icon again, full carved inscription visible, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 77,
+    "timestamp": "[9:22]",
+    "timestamp_clean": "9-22",
+    "download_time": "2026-10-08 10:32:40",
+    "original_filename": "f56f9dd9-eada-4e72-91d4-636031bd4cc8.jpg",
+    "new_filename": "[9-22] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, the name DELICATUS carved in bold letters beside the.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, the name DELICATUS carved in bold letters beside the Flamma name on the tombstone, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 78,
+    "timestamp": "[9:29]",
+    "timestamp_clean": "9-29",
+    "download_time": "2026-10-08 10:33:44",
+    "original_filename": "c5e780b6-f01c-4d8e-8fb9-6b216c116f98.jpg",
+    "new_filename": "[9-29] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, two gladiator stick figures clasping hands in.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, two gladiator stick figures clasping hands in friendship, warm expression, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 79,
+    "timestamp": "[9:36]",
+    "timestamp_clean": "9-36",
+    "download_time": "2026-10-08 10:34:20",
+    "original_filename": "224898fc-659e-4ecb-953f-a70bed94ba9c.jpg",
+    "new_filename": "[9-36] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, large bold ALL CAPS red marker text centered reading.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, large bold ALL CAPS red marker text centered reading STAGE SEVEN, white background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 80,
+    "timestamp": "[9:43]",
+    "timestamp_clean": "9-43",
+    "download_time": "2026-10-08 10:35:01",
+    "original_filename": "b1802b43-4497-44e1-bbcc-5c29dfd0bfe7.jpg",
+    "new_filename": "[9-43] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a sponsor stick figure handing a glowing wooden sword.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a sponsor stick figure handing a glowing wooden sword icon to a kneeling gladiator stick figure, golden yellow background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 81,
+    "timestamp": "[9:55]",
+    "timestamp_clean": "9-55",
+    "download_time": "2026-10-08 10:35:57",
+    "original_filename": "be48fb5c-b157-478f-8729-85ca939369d3.jpg",
+    "new_filename": "[9-55] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a golden yellow checkmark stamped over the wooden.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a golden yellow checkmark stamped over the wooden sword icon, golden yellow background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 82,
+    "timestamp": "[9:57]",
+    "timestamp_clean": "9-57",
+    "download_time": "2026-10-08 10:36:50",
+    "original_filename": "f00b1b88-f514-4d7c-b6a5-d697280fb0f5.jpg",
+    "new_filename": "[9-57] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, one small glowing wooden sword icon surrounded by.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, one small glowing wooden sword icon surrounded by many plain crossed steel sword icons, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 83,
+    "timestamp": "[10:03]",
+    "timestamp_clean": "10-03",
+    "download_time": "2026-10-08 10:37:21",
+    "original_filename": "834ef79a-2126-4015-934e-2dcd6f1708e8.jpg",
+    "new_filename": "[10-03] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, the small cemetery icon from earlier beside a single.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, the small cemetery icon from earlier beside a single glowing wooden sword icon, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 84,
+    "timestamp": "[10:12]",
+    "timestamp_clean": "10-12",
+    "download_time": "2026-10-08 10:38:05",
+    "original_filename": "99a1f7f3-ca42-4687-ac8c-0df12c5e7fef.jpg",
+    "new_filename": "[10-12] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, bold ALL CAPS marker text centered reading WHAT DOES.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, bold ALL CAPS marker text centered reading WHAT DOES IT TELL US?, white background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 85,
+    "timestamp": "[10:21]",
+    "timestamp_clean": "10-21",
+    "download_time": "2026-10-08 10:46:25",
+    "original_filename": "1cb3cd33-eb9f-4175-962e-90c1dc7d43a0.jpg",
+    "new_filename": "[10-21] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, the same crossed-out KINDER text shown larger and.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, the same crossed-out KINDER text shown larger and bolder, white background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 86,
+    "timestamp": "[10:22]",
+    "timestamp_clean": "10-22",
+    "download_time": "2026-10-08 10:47:27",
+    "original_filename": "9f179ce4-93d7-460a-a36b-592613ed65b7.jpg",
+    "new_filename": "[10-22] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a simple shackle and chain icon wrapped around a.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a simple shackle and chain icon wrapped around a stick figure's wrist, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 87,
+    "timestamp": "[10:25]",
+    "timestamp_clean": "10-25",
+    "download_time": "2026-10-08 10:48:50",
+    "original_filename": "436ae7e1-b174-42e0-bfc7-3aa5610a28f9.jpg",
+    "new_filename": "[10-25] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a crowd of small stick figures in simple arena.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a crowd of small stick figures in simple arena stands cheering with raised fists, a gladiator figure performing below, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 88,
+    "timestamp": "[10:35]",
+    "timestamp_clean": "10-35",
+    "download_time": "2026-10-08 10:50:34",
+    "original_filename": "b91b9b33-3089-45e8-8555-72de3d51cdd2.jpg",
+    "new_filename": "[10-35] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, bold ALL CAPS red marker text reading MAXIMUM DEATH.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, bold ALL CAPS red marker text reading MAXIMUM DEATH with a thick black diagonal X drawn across it, white background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 89,
+    "timestamp": "[10:39]",
+    "timestamp_clean": "10-39",
+    "download_time": "2026-10-08 10:51:24",
+    "original_filename": "c2aebbb9-37f3-4b52-bf72-7bf71c78aa5e.jpg",
+    "new_filename": "[10-39] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, bold ALL CAPS golden yellow marker text centered.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, bold ALL CAPS golden yellow marker text centered reading MAXIMUM SPECTACLE, several small repeated match-icon symbols arranged beneath it, white background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 90,
+    "timestamp": "[10:51]",
+    "timestamp_clean": "10-51",
+    "download_time": "2026-10-08 10:52:24",
+    "original_filename": "3012d121-023f-46c0-a9e8-560c6caad186.jpg",
+    "new_filename": "[10-51] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, the barley bowl icon from earlier beside a.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, the barley bowl icon from earlier beside a crossed-out word MERCY in bold red marker text, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 91,
+    "timestamp": "[10:53]",
+    "timestamp_clean": "10-53",
+    "download_time": "2026-10-08 10:53:23",
+    "original_filename": "994cb314-a1b7-464c-8f36-584c8503e9f3.jpg",
+    "new_filename": "[10-53] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, bold ALL CAPS marker text centered reading ASSET.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, bold ALL CAPS marker text centered reading ASSET MANAGEMENT, a small ledger-and-coin icon beside it, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 92,
+    "timestamp": "[10:55]",
+    "timestamp_clean": "10-55",
+    "download_time": "2026-10-08 10:54:23",
+    "original_filename": "db5fb499-d449-4637-878a-c0e8d88838b8.jpg",
+    "new_filename": "[10-55] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, the word MISSIO in bold text beside a crossed-out.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, the word MISSIO in bold text beside a crossed-out word KINDNESS in red marker text, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 93,
+    "timestamp": "[10:57]",
+    "timestamp_clean": "10-57",
+    "download_time": "2026-10-08 10:55:23",
+    "original_filename": "5ebf35b8-d1b2-4718-838d-c78be9656e8e.jpg",
+    "new_filename": "[10-57] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a small coin icon forming a protective shell around.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a small coin icon forming a protective shell around a gladiator stick figure, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 94,
+    "timestamp": "[11:01]",
+    "timestamp_clean": "11-01",
+    "download_time": "2026-10-08 10:56:23",
+    "original_filename": "247aa574-77ca-4087-aca0-5fe8df213101.jpg",
+    "new_filename": "[11-01] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a quiet, still gladiator stick figure silhouette.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a quiet, still gladiator stick figure silhouette standing alone, the word MYTH fading away in faint outline above it, white background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 95,
+    "timestamp": "[11:08]",
+    "timestamp_clean": "11-08",
+    "download_time": "2026-10-08 10:57:24",
+    "original_filename": "3915430b-459e-4eef-8329-c4bb3b9de3ff.jpg",
+    "new_filename": "[11-08] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, bold ALL CAPS red marker text reading END HIS LIFE.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, bold ALL CAPS red marker text reading END HIS LIFE with a thick black diagonal X drawn across it, white background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 96,
+    "timestamp": "[11:11]",
+    "timestamp_clean": "11-11",
+    "download_time": "2026-10-08 10:58:23",
+    "original_filename": "fd70f122-5cfe-428d-ac24-c3dbbfce16f5.jpg",
+    "new_filename": "[11-11] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a gladiator stick figure performing in the arena.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a gladiator stick figure performing in the arena with a cheering crowd, the scene slowly fading toward the edges of the frame, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 97,
+    "timestamp": "[11:19]",
+    "timestamp_clean": "11-19",
+    "download_time": "2026-10-08 10:59:24",
+    "original_filename": "b24ec536-4cd5-4699-a089-0f7b9daa0e5e.jpg",
+    "new_filename": "[11-19] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a split frame showing a dramatic movie-poster-style.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a split frame showing a dramatic movie-poster-style gladiator figure on one side and a plain ordinary stick figure on the other, white background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 98,
+    "timestamp": "[11:23]",
+    "timestamp_clean": "11-23",
+    "download_time": "2026-10-08 11:00:23",
+    "original_filename": "bc4a663d-79d2-478d-9156-672c1a1f2a7d.jpg",
+    "new_filename": "[11-23] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, bold ALL CAPS red marker text reading DRAMATIC DEATH.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, bold ALL CAPS red marker text reading DRAMATIC DEATH with a thick black diagonal X drawn across it, white background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 99,
+    "timestamp": "[11:27]",
+    "timestamp_clean": "11-27",
+    "download_time": "2026-10-08 11:01:23",
+    "original_filename": "0c173726-0d5a-4c1a-a458-1fefa5e555de.jpg",
+    "new_filename": "[11-27] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a gladiator stick figure falling, then standing back.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a gladiator stick figure falling, then standing back up again, shown in a simple repeating circular arrow cycle, tan background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  },
+  {
+    "index": 100,
+    "timestamp": "[11:43]",
+    "timestamp_clean": "11-43",
+    "download_time": "2026-10-08 11:02:23",
+    "original_filename": "b691b395-6028-431b-884d-3ee7b659df24.jpg",
+    "new_filename": "[11-43] Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a single gladiator stick figure standing quietly.jpg",
+    "prompt_text": "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a single gladiator stick figure standing quietly, slowly fading into a soft shadow silhouette, white background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."
+  }
+]
