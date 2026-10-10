@@ -14,15 +14,269 @@ from PIL import Image, ImageTk
 
 # Import prompts and default skip set from organize_images
 try:
-    from organize_images import PROMPTS, SKIPPED_TIMESTAMPS, sanitize_filename
+    from organize_images import (
+        PROMPTS, SKIPPED_TIMESTAMPS, sanitize_filename,
+        load_prompts, save_prompts, parse_prompts_from_text, format_prompts_to_text
+    )
 except ImportError:
     # Fallback if imported from another location
     sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-    from organize_images import PROMPTS, SKIPPED_TIMESTAMPS, sanitize_filename
+    from organize_images import (
+        PROMPTS, SKIPPED_TIMESTAMPS, sanitize_filename,
+        load_prompts, save_prompts, parse_prompts_from_text, format_prompts_to_text
+    )
 
 # Set CustomTkinter theme
 ctk.set_appearance_mode("Dark")
 ctk.set_default_color_theme("blue")
+
+
+class PromptsManagerDialog(ctk.CTkToplevel):
+    def __init__(self, parent):
+        super().__init__(parent)
+        self.parent = parent
+        self.title("📝 Prompt Manager & Paste Input")
+        self.geometry("900x680")
+        self.minsize(750, 520)
+
+        # Make modal
+        self.transient(parent)
+        self.grab_set()
+
+        self._create_widgets()
+        self._populate_current()
+
+    def _create_widgets(self):
+        # Header
+        header = ctk.CTkFrame(self, corner_radius=0, fg_color="#18181b")
+        header.pack(fill="x", padx=0, pady=0)
+
+        top_box = ctk.CTkFrame(header, fg_color="transparent")
+        top_box.pack(fill="x", padx=20, pady=12)
+
+        ctk.CTkLabel(
+            top_box,
+            text="📝 Prompts Manager & Input",
+            font=ctk.CTkFont(size=18, weight="bold"),
+            text_color="#f4f4f5"
+        ).pack(side="left")
+
+        self.count_badge = ctk.CTkLabel(
+            top_box,
+            text="0 Prompts Detected",
+            fg_color="#27272a",
+            corner_radius=6,
+            padx=12,
+            pady=4,
+            font=ctk.CTkFont(size=12, weight="bold"),
+            text_color="#38bdf8"
+        )
+        self.count_badge.pack(side="right")
+
+        # Instruction banner
+        info_banner = ctk.CTkFrame(self, fg_color="#202024", corner_radius=8)
+        info_banner.pack(fill="x", padx=16, pady=(10, 6))
+
+        info_text = (
+            "💡 How to input: Paste prompts below with timestamps like [00:00] Description... "
+            "Prompts can span multiple lines.\n"
+            "You can also click 'Paste from Clipboard', load from a .txt / .json file, or type/edit directly."
+        )
+        ctk.CTkLabel(
+            info_banner,
+            text=info_text,
+            font=ctk.CTkFont(size=11),
+            text_color="#94a3b8",
+            justify="left"
+        ).pack(anchor="w", padx=12, pady=8)
+
+        # Toolbar Frame
+        toolbar = ctk.CTkFrame(self, fg_color="transparent")
+        toolbar.pack(fill="x", padx=16, pady=(2, 6))
+
+        ctk.CTkButton(
+            toolbar,
+            text="📋 Paste from Clipboard",
+            width=160,
+            fg_color="#0284c7",
+            hover_color="#0369a1",
+            font=ctk.CTkFont(weight="bold"),
+            command=self._paste_from_clipboard
+        ).pack(side="left", padx=(0, 8))
+
+        ctk.CTkButton(
+            toolbar,
+            text="📂 Load File (.txt/.json)",
+            width=150,
+            fg_color="#334155",
+            hover_color="#475569",
+            command=self._load_file
+        ).pack(side="left", padx=(0, 8))
+
+        ctk.CTkButton(
+            toolbar,
+            text="💾 Export (.txt)",
+            width=110,
+            fg_color="#334155",
+            hover_color="#475569",
+            command=self._export_file
+        ).pack(side="left", padx=(0, 8))
+
+        ctk.CTkButton(
+            toolbar,
+            text="🔄 Reload Current",
+            width=120,
+            fg_color="#27272a",
+            hover_color="#3f3f46",
+            command=self._populate_current
+        ).pack(side="left", padx=(0, 8))
+
+        ctk.CTkButton(
+            toolbar,
+            text="🧹 Clear",
+            width=75,
+            fg_color="#7f1d1d",
+            hover_color="#991b1b",
+            command=self._clear_text
+        ).pack(side="right")
+
+        # Main Text Editor
+        text_frame = ctk.CTkFrame(self, fg_color="#18181b", corner_radius=8)
+        text_frame.pack(fill="both", expand=True, padx=16, pady=4)
+
+        self.textbox = ctk.CTkTextbox(
+            text_frame,
+            fg_color="#18181b",
+            text_color="#f4f4f5",
+            font=ctk.CTkFont(family="Consolas", size=11),
+            wrap="word",
+            undo=True
+        )
+        self.textbox.pack(fill="both", expand=True, padx=8, pady=8)
+        self.textbox.bind("<KeyRelease>", lambda e: self._update_count())
+
+        # Footer Actions
+        footer = ctk.CTkFrame(self, fg_color="#18181b", corner_radius=0)
+        footer.pack(fill="x", side="bottom", padx=0, pady=0)
+
+        f_inner = ctk.CTkFrame(footer, fg_color="transparent")
+        f_inner.pack(fill="x", padx=16, pady=10)
+
+        self.apply_btn = ctk.CTkButton(
+            f_inner,
+            text="✅ Apply Prompts to Organizer",
+            font=ctk.CTkFont(size=13, weight="bold"),
+            fg_color="#0284c7",
+            hover_color="#0369a1",
+            width=220,
+            command=self._apply_and_close
+        )
+        self.apply_btn.pack(side="right", padx=(8, 0))
+
+        ctk.CTkButton(
+            f_inner,
+            text="Cancel",
+            width=90,
+            fg_color="#27272a",
+            hover_color="#3f3f46",
+            command=self.destroy
+        ).pack(side="right")
+
+    def _populate_current(self):
+        text_content = format_prompts_to_text(self.parent.prompts_list)
+        self.textbox.delete("1.0", "end")
+        self.textbox.insert("1.0", text_content)
+        self._update_count()
+
+    def _update_count(self):
+        raw = self.textbox.get("1.0", "end").strip()
+        parsed = parse_prompts_from_text(raw)
+        cnt = len(parsed)
+        self.count_badge.configure(text=f"{cnt} Prompts Detected")
+        self.apply_btn.configure(text=f"✅ Apply {cnt} Prompts" if cnt > 0 else "✅ Apply Prompts")
+        return parsed
+
+    def _paste_from_clipboard(self):
+        try:
+            cb_text = self.clipboard_get()
+            if cb_text:
+                self.textbox.delete("1.0", "end")
+                self.textbox.insert("1.0", cb_text)
+                self._update_count()
+        except Exception as e:
+            messagebox.showwarning("Clipboard", f"Could not read clipboard: {e}")
+
+    def _clear_text(self):
+        self.textbox.delete("1.0", "end")
+        self._update_count()
+
+    def _load_file(self):
+        path = filedialog.askopenfilename(
+            filetypes=[("Text & JSON Files", "*.txt *.json"), ("All Files", "*.*")]
+        )
+        if not path:
+            return
+        try:
+            if path.endswith(".json"):
+                with open(path, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                    prompts = [(item["timestamp"], item["prompt"]) for item in data if "timestamp" in item and "prompt" in item]
+                    text_content = format_prompts_to_text(prompts)
+            else:
+                with open(path, "r", encoding="utf-8") as f:
+                    text_content = f.read()
+            self.textbox.delete("1.0", "end")
+            self.textbox.insert("1.0", text_content)
+            self._update_count()
+        except Exception as e:
+            messagebox.showerror("Error", f"Failed to load file: {e}")
+
+    def _export_file(self):
+        path = filedialog.asksaveasfilename(
+            defaultextension=".txt",
+            filetypes=[("Text File", "*.txt"), ("JSON File", "*.json")]
+        )
+        if not path:
+            return
+        try:
+            raw = self.textbox.get("1.0", "end").strip()
+            parsed = parse_prompts_from_text(raw)
+            if path.endswith(".json"):
+                save_prompts(parsed, target_path=path)
+            else:
+                with open(path, "w", encoding="utf-8") as f:
+                    f.write(format_prompts_to_text(parsed))
+            messagebox.showinfo("Exported", f"Successfully exported {len(parsed)} prompts to:\n{path}")
+        except Exception as e:
+            messagebox.showerror("Error", f"Failed to export file: {e}")
+
+    def _apply_and_close(self):
+        parsed = self._update_count()
+        if not parsed:
+            messagebox.showwarning("No Prompts", "No valid prompts were found in the text box.\nPlease check your format.")
+            return
+
+        # Save to current_prompts.json in workspace and source directory
+        try:
+            save_prompts(parsed)
+            src_dir = self.parent.source_dir_var.get()
+            if os.path.exists(src_dir):
+                save_prompts(parsed, os.path.join(src_dir, "current_prompts.json"))
+        except Exception as e:
+            print("Warning saving current_prompts.json:", e)
+
+        # Update parent state
+        self.parent.prompts_list = parsed
+        if hasattr(self.parent, "prompts_btn"):
+            self.parent.prompts_btn.configure(text=f"📝 Prompts ({len(parsed)})")
+        self.destroy()
+
+        # Trigger preview update
+        self.parent._scan_and_preview()
+        messagebox.showinfo(
+            "Prompts Updated",
+            f"Successfully applied {len(parsed)} prompts!\nTimeline preview has been refreshed."
+        )
 
 
 class ImageOrganizerApp(ctk.CTk):
@@ -40,10 +294,11 @@ class ImageOrganizerApp(ctk.CTk):
         self.archive_name_var = tk.StringVar(value="original_images")
         self.archive_enabled_var = tk.BooleanVar(value=True)
         self.action_var = tk.StringVar(value="copy")
-        self.skipped_var = tk.StringVar(value="10:17, 3:20, 6:06")
+        self.skipped_var = tk.StringVar(value="")
         self.status_var = tk.StringVar(value="Ready. Click 'Scan & Match' to preview.")
 
-        # Data state
+        # Data state - load active prompts from current_prompts.json or default
+        self.prompts_list = load_prompts(default_dir)
         self.mapped_items = []
         self.is_processing = False
         self.current_thumbnail = None
@@ -90,6 +345,16 @@ class ImageOrganizerApp(ctk.CTk):
             text_color="#38bdf8"
         )
         self.count_badge.pack(side="right")
+
+        self.prompts_btn = ctk.CTkButton(
+            badge_box,
+            text=f"📝 Input / Paste Prompts ({len(self.prompts_list)})",
+            fg_color="#0284c7",
+            hover_color="#0369a1",
+            font=ctk.CTkFont(size=12, weight="bold"),
+            command=self._open_prompts_manager
+        )
+        self.prompts_btn.pack(side="right", padx=(0, 10))
 
         # 2. Controls & Configuration Card
         controls_card = ctk.CTkFrame(self, fg_color="#202024", corner_radius=10)
@@ -140,6 +405,16 @@ class ImageOrganizerApp(ctk.CTk):
         ctk.CTkLabel(r2, text="Skip Timestamps:", anchor="w", font=ctk.CTkFont(weight="bold")).pack(side="left")
         self.skip_entry = ctk.CTkEntry(r2, textvariable=self.skipped_var, width=130, font=ctk.CTkFont(size=12))
         self.skip_entry.pack(side="left", padx=(6, 12))
+
+        self.prompts_card_btn = ctk.CTkButton(
+            r2,
+            text="📝 Prompts",
+            width=90,
+            fg_color="#334155",
+            hover_color="#475569",
+            command=self._open_prompts_manager
+        )
+        self.prompts_card_btn.pack(side="left", padx=(0, 6))
 
         self.scan_btn = ctk.CTkButton(
             r2,
@@ -321,7 +596,15 @@ class ImageOrganizerApp(ctk.CTk):
         folder = filedialog.askdirectory(initialdir=self.source_dir_var.get())
         if folder:
             self.source_dir_var.set(folder)
+            folder_prompts = load_prompts(folder)
+            if folder_prompts:
+                self.prompts_list = folder_prompts
+                if hasattr(self, "prompts_btn"):
+                    self.prompts_btn.configure(text=f"📝 Input / Paste Prompts ({len(self.prompts_list)})")
             self._scan_and_preview()
+
+    def _open_prompts_manager(self):
+        PromptsManagerDialog(self)
 
     def _on_mode_change(self, value):
         self.action_var.set("copy" if "Copy" in value else "move")
@@ -358,7 +641,9 @@ class ImageOrganizerApp(ctk.CTk):
         image_files.sort(key=lambda f: os.stat(f).st_mtime)
 
         skipped_set = self._get_skipped_set()
-        valid_prompts = [(ts, text) for (ts, text) in PROMPTS if ts not in skipped_set]
+        valid_prompts = [(ts, text) for (ts, text) in self.prompts_list if ts not in skipped_set]
+        if hasattr(self, "prompts_btn"):
+            self.prompts_btn.configure(text=f"📝 Input / Paste Prompts ({len(self.prompts_list)})")
 
         self.mapped_items = []
         for idx, (img_path, (ts_raw, prompt_text)) in enumerate(zip(image_files, valid_prompts)):

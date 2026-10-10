@@ -115,8 +115,80 @@ PROMPTS = [
     ("[11:43]", "Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, a single gladiator stick figure standing quietly, slowly fading into a soft shadow silhouette, white background, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style. Do not render the timestamp text."),
 ]
 
-# Failed prompts that must be skipped
-SKIPPED_TIMESTAMPS = {"[10:17]", "[3:20]", "[6:06]"}
+# Failed prompts that must be skipped by default (empty for new projects)
+SKIPPED_TIMESTAMPS = set()
+
+def parse_prompts_from_text(raw_text):
+    """
+    Parses arbitrary prompt text containing [mm:ss] or [m:ss] timestamps.
+    Supports multiline descriptions for each prompt.
+    """
+    pattern = r'(\[\d{1,2}:\d{2}\])\s*(.*?)(?=(\[\d{1,2}:\d{2}\])|\Z)'
+    matches = list(re.finditer(pattern, raw_text, re.DOTALL))
+    prompts = []
+    if matches:
+        for m in matches:
+            ts = m.group(1).strip()
+            text = m.group(2).strip()
+            text = re.sub(r'\s+', ' ', text)
+            if text:
+                prompts.append((ts, text))
+    else:
+        # Fallback: line-by-line
+        lines = [line.strip() for line in raw_text.splitlines() if line.strip()]
+        for idx, line in enumerate(lines):
+            ts_match = re.match(r'^(\[?\d{1,2}:\d{2}\]?)\s*(.*)$', line)
+            if ts_match:
+                ts = ts_match.group(1)
+                if not ts.startswith("["):
+                    ts = f"[{ts}]"
+                text = ts_match.group(2).strip()
+            else:
+                ts = f"[{idx+1:02d}]"
+                text = line
+            text = re.sub(r'\s+', ' ', text)
+            prompts.append((ts, text))
+    return prompts
+
+def format_prompts_to_text(prompts_list):
+    """
+    Formats a list of (timestamp, prompt) tuples into standard prompt text blocks.
+    """
+    return "\n\n".join(f"{ts} {text}" for ts, text in prompts_list)
+
+def load_prompts(source_dir=None):
+    """
+    Loads prompts from current_prompts.json if available,
+    otherwise falls back to default PROMPTS.
+    """
+    search_dirs = []
+    if source_dir:
+        search_dirs.append(source_dir)
+    search_dirs.append(os.path.dirname(os.path.abspath(__file__)))
+    search_dirs.append(os.getcwd())
+    
+    for d in search_dirs:
+        json_file = os.path.join(d, "current_prompts.json")
+        if os.path.exists(json_file):
+            try:
+                with open(json_file, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                    prompts = [(item["timestamp"], item["prompt"]) for item in data if "timestamp" in item and "prompt" in item]
+                    if prompts:
+                        return prompts
+            except Exception as e:
+                print(f"Warning: Failed to load {json_file}: {e}")
+    return PROMPTS
+
+def save_prompts(prompts_list, target_path=None):
+    """
+    Saves a list of (timestamp, prompt) tuples to current_prompts.json.
+    """
+    if target_path is None:
+        target_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "current_prompts.json")
+    data = [{"timestamp": ts, "prompt": text} for (ts, text) in prompts_list]
+    with open(target_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
 
 def sanitize_filename(text, prefix, ext=".jpg", max_total_len=180):
     """
@@ -139,9 +211,14 @@ def sanitize_filename(text, prefix, ext=".jpg", max_total_len=180):
         
     return f"{prefix}{truncated}{ext}"
 
-def organize_images(source_dir, output_folder_name="organized_images", action="copy", archive_originals=True, archive_folder_name="original_images", dry_run=False):
+def organize_images(source_dir, output_folder_name="organized_images", action="copy", archive_originals=True, archive_folder_name="original_images", dry_run=False, prompts=None, skipped_timestamps=None):
     output_dir = os.path.join(source_dir, output_folder_name)
     archive_dir = os.path.join(source_dir, archive_folder_name) if archive_folder_name else None
+    
+    if prompts is None:
+        prompts = load_prompts(source_dir)
+    if skipped_timestamps is None:
+        skipped_timestamps = SKIPPED_TIMESTAMPS
     
     # 1. Gather image files in the source directory (excluding subdirectories)
     image_patterns = ["*.jpg", "*.jpeg", "*.png"]
@@ -163,8 +240,8 @@ def organize_images(source_dir, output_folder_name="organized_images", action="c
     print(f"Found {len(image_files)} images in '{source_dir}'")
     
     # 3. Filter valid prompts by excluding skipped timestamps
-    valid_prompts = [(ts, text) for (ts, text) in PROMPTS if ts not in SKIPPED_TIMESTAMPS]
-    print(f"Filtered prompt list has {len(valid_prompts)} prompts (skipped {len(SKIPPED_TIMESTAMPS)} failed: {SKIPPED_TIMESTAMPS})")
+    valid_prompts = [(ts, text) for (ts, text) in prompts if ts not in skipped_timestamps]
+    print(f"Filtered prompt list has {len(valid_prompts)} prompts (skipped {len(skipped_timestamps)} failed: {skipped_timestamps})")
     
     if len(image_files) != len(valid_prompts):
         print(f"Warning: Count mismatch! Found {len(image_files)} images but have {len(valid_prompts)} valid prompts.")
