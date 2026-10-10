@@ -30,13 +30,15 @@ class ImageOrganizerApp(ctk.CTk):
         super().__init__()
 
         self.title("Image Prompt & Timeline Organizer")
-        self.geometry("1180x750")
-        self.minsize(960, 620)
+        self.geometry("1220x760")
+        self.minsize(1050, 620)
 
         # Base directories
         default_dir = os.path.dirname(os.path.abspath(__file__))
         self.source_dir_var = tk.StringVar(value=default_dir)
         self.output_name_var = tk.StringVar(value="organized_images")
+        self.archive_name_var = tk.StringVar(value="original_images")
+        self.archive_enabled_var = tk.BooleanVar(value=True)
         self.action_var = tk.StringVar(value="copy")
         self.skipped_var = tk.StringVar(value="10:17, 3:20, 6:06")
         self.status_var = tk.StringVar(value="Ready. Click 'Scan & Match' to preview.")
@@ -93,61 +95,87 @@ class ImageOrganizerApp(ctk.CTk):
         controls_card = ctk.CTkFrame(self, fg_color="#202024", corner_radius=10)
         controls_card.pack(fill="x", padx=16, pady=(12, 6))
 
-        # Row 1: Source & Output
+        # Row 1: Source, Output & Archive
         r1 = ctk.CTkFrame(controls_card, fg_color="transparent")
         r1.pack(fill="x", padx=12, pady=(10, 6))
 
         ctk.CTkLabel(r1, text="Source Folder:", width=95, anchor="w", font=ctk.CTkFont(weight="bold")).pack(side="left")
         self.src_entry = ctk.CTkEntry(r1, textvariable=self.source_dir_var, font=ctk.CTkFont(size=12))
         self.src_entry.pack(side="left", fill="x", expand=True, padx=(0, 6))
-        ctk.CTkButton(r1, text="Browse...", width=80, command=self._browse_source).pack(side="left", padx=(0, 16))
+        ctk.CTkButton(r1, text="Browse...", width=75, command=self._browse_source).pack(side="left", padx=(0, 14))
 
-        ctk.CTkLabel(r1, text="Output Folder:", width=90, anchor="w", font=ctk.CTkFont(weight="bold")).pack(side="left")
-        self.out_entry = ctk.CTkEntry(r1, textvariable=self.output_name_var, width=170, font=ctk.CTkFont(size=12))
-        self.out_entry.pack(side="left", padx=(0, 6))
+        ctk.CTkLabel(r1, text="Organized Folder:", width=110, anchor="w", font=ctk.CTkFont(weight="bold")).pack(side="left")
+        self.out_entry = ctk.CTkEntry(r1, textvariable=self.output_name_var, width=150, font=ctk.CTkFont(size=12))
+        self.out_entry.pack(side="left", padx=(0, 14))
 
-        # Row 2: Mode, Skips & Action Buttons
+        ctk.CTkLabel(r1, text="Archive Folder:", width=95, anchor="w", font=ctk.CTkFont(weight="bold")).pack(side="left")
+        self.arch_entry = ctk.CTkEntry(r1, textvariable=self.archive_name_var, width=150, font=ctk.CTkFont(size=12))
+        self.arch_entry.pack(side="left", padx=(0, 6))
+
+        # Row 2: Mode, Archive Checkbox, Skips & Action Buttons
         r2 = ctk.CTkFrame(controls_card, fg_color="transparent")
         r2.pack(fill="x", padx=12, pady=(0, 10))
 
-        ctk.CTkLabel(r2, text="Mode:", width=50, anchor="w", font=ctk.CTkFont(weight="bold")).pack(side="left")
+        ctk.CTkLabel(r2, text="Mode:", width=45, anchor="w", font=ctk.CTkFont(weight="bold")).pack(side="left")
         self.mode_seg = ctk.CTkSegmentedButton(
             r2,
             values=["Copy (Safe)", "Move"],
-            command=self._on_mode_change
+            command=self._on_mode_change,
+            width=135
         )
         self.mode_seg.set("Copy (Safe)")
-        self.mode_seg.pack(side="left", padx=(0, 16))
+        self.mode_seg.pack(side="left", padx=(0, 12))
+
+        self.archive_chk = ctk.CTkCheckBox(
+            r2,
+            text="Archive originals (clean main)",
+            variable=self.archive_enabled_var,
+            font=ctk.CTkFont(size=12, weight="bold"),
+            checkmark_color="#ffffff",
+            fg_color="#0284c7",
+            hover_color="#0369a1"
+        )
+        self.archive_chk.pack(side="left", padx=(0, 12))
 
         ctk.CTkLabel(r2, text="Skip Timestamps:", anchor="w", font=ctk.CTkFont(weight="bold")).pack(side="left")
-        self.skip_entry = ctk.CTkEntry(r2, textvariable=self.skipped_var, width=180, font=ctk.CTkFont(size=12))
-        self.skip_entry.pack(side="left", padx=(6, 16))
+        self.skip_entry = ctk.CTkEntry(r2, textvariable=self.skipped_var, width=130, font=ctk.CTkFont(size=12))
+        self.skip_entry.pack(side="left", padx=(6, 12))
 
         self.scan_btn = ctk.CTkButton(
             r2,
             text="🔄 Scan & Match",
-            width=120,
+            width=110,
             fg_color="#334155",
             hover_color="#475569",
             command=self._scan_and_preview
         )
-        self.scan_btn.pack(side="left", padx=(0, 8))
+        self.scan_btn.pack(side="left", padx=(0, 6))
 
         self.run_btn = ctk.CTkButton(
             r2,
             text="▶ Run Organization",
-            width=160,
+            width=145,
             fg_color="#0284c7",
             hover_color="#0369a1",
             font=ctk.CTkFont(weight="bold"),
             command=self._start_organization
         )
-        self.run_btn.pack(side="left", padx=(0, 8))
+        self.run_btn.pack(side="left", padx=(0, 6))
+
+        self.open_orig_btn = ctk.CTkButton(
+            r2,
+            text="📁 Open Originals",
+            width=105,
+            fg_color="#27272a",
+            hover_color="#3f3f46",
+            command=self._open_originals_dir
+        )
+        self.open_orig_btn.pack(side="right", padx=(4, 0))
 
         self.open_btn = ctk.CTkButton(
             r2,
             text="📂 Open Output",
-            width=120,
+            width=105,
             fg_color="#27272a",
             hover_color="#3f3f46",
             command=self._open_output_dir
@@ -315,14 +343,16 @@ class ImageOrganizerApp(ctk.CTk):
 
         out_name = self.output_name_var.get().strip()
         out_full = os.path.normpath(os.path.join(src, out_name))
+        arch_name = self.archive_name_var.get().strip()
+        arch_full = os.path.normpath(os.path.join(src, arch_name)) if arch_name else None
 
-        # Find images in source (excluding output folder if it exists inside source)
+        # Find images in source (excluding output and archive folders)
         image_files = []
         for pat in ["*.jpg", "*.jpeg", "*.png"]:
             for f in glob.glob(os.path.join(src, pat)):
                 if os.path.isfile(f):
-                    # Do not include files inside destination
-                    if os.path.normpath(os.path.dirname(f)) != out_full:
+                    dir_norm = os.path.normpath(os.path.dirname(f))
+                    if dir_norm != out_full and (not arch_full or dir_norm != arch_full):
                         image_files.append(f)
 
         image_files.sort(key=lambda f: os.stat(f).st_mtime)
@@ -369,12 +399,23 @@ class ImageOrganizerApp(ctk.CTk):
         img_count = len(image_files)
         prompt_count = len(valid_prompts)
         self.count_badge.configure(text=f"{match_count} Matched ({img_count} imgs / {prompt_count} prompts)")
-        self.status_var.set(f"Scanned {img_count} images. Successfully aligned {match_count} with prompt timeline.")
+        if img_count == 0:
+            self.status_var.set("Main folder is clean! Ready to receive new images for another process.")
+        else:
+            self.status_var.set(f"Scanned {img_count} images. Successfully aligned {match_count} with prompt timeline.")
 
         if self.mapped_items:
             first_id = self.tree.get_children()[0]
             self.tree.selection_set(first_id)
             self._display_item_details(self.mapped_items[0])
+        else:
+            self.thumb_label.configure(image="", text="Main folder is clean.\nReady for new images.")
+            self.lbl_sel_ts.configure(text="Timestamp: -")
+            self.lbl_sel_time.configure(text="Created: -")
+            self.lbl_sel_file.configure(text="File: -")
+            self.prompt_text_box.configure(state="normal")
+            self.prompt_text_box.delete("1.0", "end")
+            self.prompt_text_box.configure(state="disabled")
 
     def _on_tree_select(self, event):
         sel = self.tree.selection()
@@ -394,9 +435,19 @@ class ImageOrganizerApp(ctk.CTk):
         self.prompt_text_box.insert("1.0", item["prompt_text"])
         self.prompt_text_box.configure(state="disabled")
 
-        # Load Thumbnail
+        # Load Thumbnail (with fallback to archive or output dir)
         try:
-            pil_img = Image.open(item["orig_path"])
+            path_to_open = item["orig_path"]
+            if not os.path.exists(path_to_open):
+                arch_name = self.archive_name_var.get().strip()
+                arch_path = os.path.join(self.source_dir_var.get(), arch_name, item["orig_filename"])
+                out_path = os.path.join(self.source_dir_var.get(), self.output_name_var.get().strip(), item["new_filename"])
+                if os.path.exists(arch_path):
+                    path_to_open = arch_path
+                elif os.path.exists(out_path):
+                    path_to_open = out_path
+
+            pil_img = Image.open(path_to_open)
             pil_img.thumbnail((300, 160))
             self.current_thumbnail = ctk.CTkImage(light_image=pil_img, dark_image=pil_img, size=pil_img.size)
             self.thumb_label.configure(image=self.current_thumbnail, text="")
@@ -411,9 +462,16 @@ class ImageOrganizerApp(ctk.CTk):
             return
 
         action = self.action_var.get()
+        arch_name = self.archive_name_var.get().strip()
+        do_archive = self.archive_enabled_var.get() and bool(arch_name)
+        
+        detail_msg = f"Are you sure you want to {action.upper()} {len(self.mapped_items)} images into '{self.output_name_var.get()}'?"
+        if do_archive and action == "copy":
+            detail_msg += f"\n\nOriginal images will be moved to '{arch_name}', cleaning the main folder for new downloads."
+
         confirm = messagebox.askyesno(
             "Confirm Organization",
-            f"Are you sure you want to {action.upper()} {len(self.mapped_items)} images into '{self.output_name_var.get()}'?"
+            detail_msg
         )
         if not confirm:
             return
@@ -429,9 +487,15 @@ class ImageOrganizerApp(ctk.CTk):
         src = self.source_dir_var.get()
         out_name = self.output_name_var.get().strip()
         out_dir = os.path.join(src, out_name)
+        arch_name = self.archive_name_var.get().strip()
+        arch_dir = os.path.join(src, arch_name) if arch_name else None
+        do_archive = self.archive_enabled_var.get() and bool(arch_dir)
         action = self.action_var.get()
 
         os.makedirs(out_dir, exist_ok=True)
+        if do_archive:
+            os.makedirs(arch_dir, exist_ok=True)
+
         total = len(self.mapped_items)
         mapping_records = []
 
@@ -442,6 +506,8 @@ class ImageOrganizerApp(ctk.CTk):
                     shutil.move(item["orig_path"], dest_path)
                 else:
                     shutil.copy2(item["orig_path"], dest_path)
+                    if do_archive:
+                        shutil.move(item["orig_path"], os.path.join(arch_dir, item["orig_filename"]))
 
                 mapping_records.append({
                     "index": item["index"],
@@ -449,7 +515,8 @@ class ImageOrganizerApp(ctk.CTk):
                     "download_time": item["download_time"],
                     "original_filename": item["orig_filename"],
                     "new_filename": item["new_filename"],
-                    "prompt_text": item["prompt_text"]
+                    "prompt_text": item["prompt_text"],
+                    "archived_location": os.path.join(arch_name, item["orig_filename"]) if do_archive else ""
                 })
             except Exception as e:
                 print(f"Error on {item['orig_filename']}: {e}")
@@ -463,7 +530,7 @@ class ImageOrganizerApp(ctk.CTk):
             with open(csv_path, mode="w", newline="", encoding="utf-8") as f:
                 writer = csv.DictWriter(f, fieldnames=[
                     "index", "timestamp", "download_time",
-                    "original_filename", "new_filename", "prompt_text"
+                    "original_filename", "new_filename", "prompt_text", "archived_location"
                 ])
                 writer.writeheader()
                 writer.writerows(mapping_records)
@@ -474,18 +541,26 @@ class ImageOrganizerApp(ctk.CTk):
         except Exception as e:
             print("Manifest write error:", e)
 
-        self.after(0, self._on_process_complete, total, out_dir)
+        self.after(0, self._on_process_complete, total, out_dir, arch_dir, do_archive)
 
     def _update_progress(self, progress, status_msg):
         self.progress_bar.set(progress)
         self.status_var.set(status_msg)
 
-    def _on_process_complete(self, total, out_dir):
+    def _on_process_complete(self, total, out_dir, arch_dir, did_archive):
         self.is_processing = False
         self.run_btn.configure(state="normal", text="▶ Run Organization")
         self.scan_btn.configure(state="normal")
-        self.status_var.set(f"Completed! {total} images organized into: {out_dir}")
-        messagebox.showinfo("Success", f"Successfully organized {total} images!\n\nSaved in:\n{out_dir}")
+        
+        msg = f"Successfully organized {total} images!\n\nSaved in:\n{out_dir}"
+        if did_archive and arch_dir:
+            msg += f"\n\nOriginal images archived to:\n{arch_dir}\n\nMain folder is now clean to welcome new images!"
+            self.status_var.set(f"Completed! {total} organized and originals archived. Main folder is clean.")
+        else:
+            self.status_var.set(f"Completed! {total} images organized into: {out_dir}")
+            
+        messagebox.showinfo("Success", msg)
+        self._scan_and_preview()
 
     def _open_output_dir(self):
         src = self.source_dir_var.get()
@@ -495,6 +570,15 @@ class ImageOrganizerApp(ctk.CTk):
             os.startfile(out_dir)
         else:
             messagebox.showinfo("Folder Not Found", f"Output folder has not been created yet:\n{out_dir}")
+
+    def _open_originals_dir(self):
+        src = self.source_dir_var.get()
+        arch_name = self.archive_name_var.get().strip()
+        arch_dir = os.path.join(src, arch_name)
+        if os.path.exists(arch_dir):
+            os.startfile(arch_dir)
+        else:
+            messagebox.showinfo("Folder Not Found", f"Originals archive folder has not been created yet:\n{arch_dir}")
 
 
 def main():

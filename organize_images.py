@@ -139,8 +139,9 @@ def sanitize_filename(text, prefix, ext=".jpg", max_total_len=180):
         
     return f"{prefix}{truncated}{ext}"
 
-def organize_images(source_dir, output_folder_name="organized_images", action="copy", dry_run=False):
+def organize_images(source_dir, output_folder_name="organized_images", action="copy", archive_originals=True, archive_folder_name="original_images", dry_run=False):
     output_dir = os.path.join(source_dir, output_folder_name)
+    archive_dir = os.path.join(source_dir, archive_folder_name) if archive_folder_name else None
     
     # 1. Gather image files in the source directory (excluding subdirectories)
     image_patterns = ["*.jpg", "*.jpeg", "*.png"]
@@ -148,7 +149,10 @@ def organize_images(source_dir, output_folder_name="organized_images", action="c
     for pattern in image_patterns:
         for f in glob.glob(os.path.join(source_dir, pattern)):
             if os.path.isfile(f):
-                image_files.append(f)
+                # Ensure we don't pick up files inside output or archive dirs if nested
+                f_dir = os.path.normpath(os.path.dirname(f))
+                if f_dir != os.path.normpath(output_dir) and (not archive_dir or f_dir != os.path.normpath(archive_dir)):
+                    image_files.append(f)
                 
     if not image_files:
         print(f"Error: No images found in {source_dir}")
@@ -171,10 +175,13 @@ def organize_images(source_dir, output_folder_name="organized_images", action="c
             print(f"Only the first {len(image_files)} prompts will be mapped.")
             valid_prompts = valid_prompts[:len(image_files)]
             
-    # 4. Prepare output directory
+    # 4. Prepare output and archive directories
     if not dry_run:
         os.makedirs(output_dir, exist_ok=True)
         print(f"Target directory: '{output_dir}'")
+        if archive_originals and archive_dir:
+            os.makedirs(archive_dir, exist_ok=True)
+            print(f"Archive directory: '{archive_dir}'")
         
     # 5. Process and map files
     mapping_records = []
@@ -193,6 +200,10 @@ def organize_images(source_dir, output_folder_name="organized_images", action="c
         new_filename = sanitize_filename(prompt_text, prefix, ext=".jpg")
         dest_path = os.path.join(output_dir, new_filename)
         
+        archived_location = ""
+        if archive_originals and archive_dir:
+            archived_location = os.path.join(archive_folder_name, orig_name)
+
         mapping_records.append({
             "index": idx + 1,
             "timestamp": ts_raw,
@@ -200,7 +211,8 @@ def organize_images(source_dir, output_folder_name="organized_images", action="c
             "download_time": download_time,
             "original_filename": orig_name,
             "new_filename": new_filename,
-            "prompt_text": prompt_text
+            "prompt_text": prompt_text,
+            "archived_location": archived_location
         })
         
         short_orig = orig_name if len(orig_name) <= 36 else orig_name[:33] + "..."
@@ -212,6 +224,8 @@ def organize_images(source_dir, output_folder_name="organized_images", action="c
                 shutil.move(orig_path, dest_path)
             else:
                 shutil.copy2(orig_path, dest_path)
+                if archive_originals and archive_dir:
+                    shutil.move(orig_path, os.path.join(archive_dir, orig_name))
                 
     print("=" * 80)
     
@@ -221,7 +235,7 @@ def organize_images(source_dir, output_folder_name="organized_images", action="c
         with open(csv_path, mode="w", newline="", encoding="utf-8") as f:
             writer = csv.DictWriter(f, fieldnames=[
                 "index", "timestamp", "timestamp_clean", "download_time",
-                "original_filename", "new_filename", "prompt_text"
+                "original_filename", "new_filename", "prompt_text", "archived_location"
             ])
             writer.writeheader()
             writer.writerows(mapping_records)
@@ -231,6 +245,9 @@ def organize_images(source_dir, output_folder_name="organized_images", action="c
             json.dump(mapping_records, f, indent=2, ensure_ascii=False)
             
         print(f"\nSuccessfully processed {len(mapping_records)} images via '{action}'.")
+        if archive_originals and archive_dir:
+            print(f"All original images moved to dedicated archive: '{archive_dir}'")
+            print("Main folder is now clean to welcome new images!")
         print(f"Manifest written to:\n - {csv_path}\n - {json_path}")
     else:
         print(f"\n[DRY RUN] Completed simulation for {len(mapping_records)} images.")
@@ -242,6 +259,8 @@ if __name__ == "__main__":
     parser.add_argument("--dir", default=".", help="Source directory containing the images (default: current directory)")
     parser.add_argument("--output", default="organized_images", help="Subfolder name to store organized images (default: 'organized_images')")
     parser.add_argument("--action", choices=["copy", "move"], default="copy", help="Whether to copy or move files (default: copy)")
+    parser.add_argument("--archive", default="original_images", help="Dedicated folder name to archive originals into (default: 'original_images')")
+    parser.add_argument("--no-archive", action="store_true", help="Do not move originals to archive folder")
     parser.add_argument("--dry-run", action="store_true", help="Simulate without copying or moving files")
     
     args = parser.parse_args()
@@ -251,5 +270,7 @@ if __name__ == "__main__":
         source_dir=source_directory,
         output_folder_name=args.output,
         action=args.action,
+        archive_originals=(not args.no_archive),
+        archive_folder_name=args.archive,
         dry_run=args.dry_run
     )
